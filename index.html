@@ -1,0 +1,96 @@
+<!--Decleration of document type.-->
+<!DOCTYPE html>
+<!--Opening tag for HTML with attribute specifying the language of orgin.-->
+<html lang="en-US">
+    <!--meta-data to talk to the browser, it is not displayed-->
+    <head>
+        <!--standard character set for HTML5-->
+        <meta charset="UTF-8"> 
+        <!--sets the width of the webpage to the device being used-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--linking external CSS styling, using relative file path-->
+        <link rel="stylesheet" href="assets/style.css">
+        <!-- displayed in the browser tab-->
+        <title>Key information for perfecting a website</title>
+    </head>
+    <!--body contains the code for the displayed webpage-->
+    <body>
+        <!--section is a semantic element used throughout the page to distinguish type/importance.-->
+        <section>
+        <!--'header' (semantic) is used to define the section containing the webpages title/company name.-->
+        <header> 
+            <!--'h1' is the title or most important key information, within is a 'bdi' tag for individual styling within a single word. Replacing the 'span' tag (which is not a semantic element).-->
+            <h1>Hori<bdi>seo</bdi>n</h1>
+            
+        <!--'nav' is a (semantic) element that disabled users have the ability to use screen readers to determine if 
+        whether or not to omit the inital rendering.-->   
+        <nav>
+            <ul>
+                <li><a href="#seo">Search Engine Optimization</a></li>
+                <li><a href="#reputation">Online Reputation Management</a></li>
+                <li><a href="#social">Social Media Marketing</a></li>
+            </ul>
+        </nav>
+        </header>
+        </section>
+        <section>
+            <!--all img contain an alt attribute for screen readers or if the image doesn't load-->
+            <img class="full-width" src="assets/images/digital-marketing-meeting.jpg" alt="business meeting at the workplace">
+        </section>    
+        <section>
+            <!--'article' (semantic) elements typically contain media, news-->
+            <article id="seo">
+                <img src="assets/images/search-engine-optimization.jpg" alt="search engine optimization">
+                    <h2>Search Engine Optimization</h2>
+                    <p>The dominance of mobile internet use means that users are searching for the right business as 
+                        they travel, shop, or sit on their couch at home. Search Engine Optimization (SEO) allows you 
+                        to increase your visibility and find the right customers for your business.</p>
+            </article>
+            <article id="reputation">
+                <img class="right" src="assets/images/online-reputation-management.jpg"alt="online reputation management">
+                    <h2>Online Reputation Management</h2>
+                    <p>The web is full of opinions, and some of these can be negative. Social media allows anyone with
+                       an internet connection to say whatever they want about your business. Online Reputation 
+                       Management gives you the control over what potential customers see when they search for your 
+                       business.</p>
+            </article>
+            <article id="social">
+                <img src="assets/images/social-media-marketing.jpg" alt="social media marketing">
+                    <h2>Social Media Marketing</h2>
+                    <p>Social media continues to have a sizable influence on buying habits. Social media marketing 
+                        helps you determine which platforms are suited to your brand, using analytics to find the 
+                        right markets and increase your lead generation.</p>
+            </article>
+            <!--'aside' (semantic) defines a piece of info in most cases to the side of content that it relates to
+            but also makes sense by itself.-->
+            <aside>
+                <!--'figure' and 'figcaption' both (semantic) are used for seperating and labelling each img 
+                    individually within the aside parent element.-->
+                <figure>    
+                    <figcaption>Lead Generation</ficaption>
+                    <img src="assets/images/lead-generation.png"alt="lead generation">
+                    <p>Inbound strategies for lead generation require less work for your business, bringing customers 
+                        directly to your website.</p>
+                </figure>
+                <figure>
+                    <figcaption>Brand Awareness</figcaption>
+                    <img src="assets/images/brand-awareness.png"alt="brand awareness">   
+                    <p>Users find your business through paid and organic searches, increasing the search ranking and 
+                        visibility for your business.</p>
+                </figure>
+                <figure>
+                    <figcaption>Cost Management</figcaption>
+                    <img src="assets/images/cost-management.png" alt="cost management">     
+                    <p>As the search ranking for your business increases, your advertising costs decrease, and you no 
+                        longer need to advertise your page.</p>
+                </figure>
+            </aside>
+            <!--'footer' is found at the bottom of the page, containing the copyright and author information.-->
+            <footer>
+                <h3>Made with ❤️️ by Horiseon</h3>
+                <br>
+                <p>&copy; 2019 Horiseon Social Solution Services, Inc.</p>
+            </footer>
+        </section>   
+    </body>
+</html>
