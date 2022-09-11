@@ -1,0 +1,110 @@
+/*universal styling applies to all elements*/
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    font-family: Verdana, Georgia, Tahoma, sans-serif;
+    text-align: center;
+}
+/*setting background and text color for all children elements*/
+body {
+    background-color: #d9dcd6;
+    color: #ffffff;
+}
+/*sets background to block element*/
+header {
+    background-color: #2a607c;
+}
+/*positioning*/
+nav {
+    padding: 30px 0;
+}
+/*positioning, spacing and giving each block a background*/
+article {
+    float: left;
+    width: 70%;
+    margin: 20px;
+    background-color: #0072bb;
+}
+/*positioning and background*/
+aside {
+    float: right;
+    display: table;
+    margin-top: -500px;
+    margin-right: 20px;
+    width: 20%;
+    background-color: #2589bd;
+}
+/*spacing*/
+figure {
+    padding: 5px;
+}
+
+/*positions at the bottom*/
+footer {
+    display: inline-block;
+    width: 100%;
+}
+/*individual/independent styling*/
+
+/*positioning and size*/
+h1 {
+    float: left;
+    font-size: 40px;
+    margin-top: 10px;  
+}
+/*multi-color withing a single word*/
+h1 #seo {
+    color: #9b9b9a;
+}
+
+/*positioning*/
+h2, h3 {
+    margin-top: 30px;
+}
+
+/*horizontal list*/
+li {
+    display: inline;
+    margin-left: 10px;
+}
+/*removes underline and blue color*/
+a {
+    text-decoration: none;
+    color:#ffffff;
+}
+/*color and size consistent for all p elements*/
+p {
+    font-size: 16px;
+    color: black;
+}
+/*positioning for specific p elements*/
+article p {
+    margin-top: 20px;
+}
+
+
+/*images- fixing their sizes and positioning*/
+
+/*responsive to fit viewport width*/
+img.full-width {
+    width: 100%;
+    height: auto;
+}
+/*sets size and position*/
+article img {
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+    padding: 20px;
+    display: inline;
+    float: left;
+}
+/*individual positioning*/
+img.right {
+    float: right;
+}
+/*sets size*/
+figure img {
+    height: 150px;
+    width: 150px;
+}
